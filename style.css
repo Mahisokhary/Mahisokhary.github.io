@@ -1,0 +1,15 @@
+body {
+
+    background-image: url(./src/img/bg.jpg);
+
+    align-content: center;
+
+    align-self: center;
+
+    text-align: center;
+
+    list-style-position: inside;
+
+    color: white;
+
+}
