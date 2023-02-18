@@ -58,6 +58,7 @@ main {
     width: 100%;
     position: absolute;
     top: 1000;
+    bottom: 1000;
     left: 0 ;
     align-items: center;
     justify-content: center;
