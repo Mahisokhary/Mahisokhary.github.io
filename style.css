@@ -1,15 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+}
 body {
-
-    background-image: url(https://wallpaperaccess.com/full/399198.jpg);
-
-    align-content: center;
-
-    align-self: center;
-
-    text-align: center;
-
-    list-style-position: inside;
-
     color: white;
-
+    overflow-x: hidden;
+    background: #000080;
+    min-height: 100vh;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navigation li {
+    list-style: none;
+}
+.navigation li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px ;
+}
+.navigation li a:hover {
+    background: #112434;
+    color: #fff;
+}
+video {
+    width: 100%;
+    position: absolute;
+    top: 300;
+    left: 0 ;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    width: 100%;
+    position: absolute;
+    top: 1000;
+    left: 0 ;
+    align-items: center;
+    justify-content: center;
+}
+main p , main h2 {
+    font-size: 30px;
+    text-align: center;
 }
