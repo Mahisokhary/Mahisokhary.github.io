@@ -46,7 +46,7 @@ header {
     background: #112434;
     color: #fff;
 }
-video {
+video , img {
     width: 100%;
     position: absolute;
     top: 300;
