@@ -1,0 +1,95 @@
+#a1 {
+    font-size: 1em;
+}
+.title {
+    font-size: 5em;
+}
+.title2 {
+    font-size: 3em;
+}
+#zq {
+    font-size: 3em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+    max-width: 100%;
+    height: auto;
+}
+audio {
+    height: 100px;
+}
+body, footer {
+    background-image: url('src/bg.jpg');
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+main {
+    width: 100%;
+    position: absolute;
+    top: 1000;
+    bottom: 1000;
+    left: 0 ;
+    align-items: center;
+    justify-content: center;
+}
+p, h1, h2, h3 {
+    color: white;
+    text-align: center;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navigation li {
+    list-style: none;
+}
+.navigation li a , a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px ;
+}
+.navigation li a:hover, a:hover {
+    background: #112434;
+    color: #fff;
+}
+section, #a1{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding: 10px;
+    border: 10px solid #008080;
+    border-radius: 100px;
+    background-color: #2F4F4F;
+}
+.div1 {
+    margin: 3px 3px 3px 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding: 10px;
+    border: 5px solid #008080;
+    border-radius: 100px;
+    background-color: #008080;
+}
