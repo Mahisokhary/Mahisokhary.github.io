@@ -22,7 +22,7 @@ audio {
     height: 100px;
 }
 body, footer {
-    background-image: url('src/bg.jpg');
+    background-image: url('bg.jpg');
     color: white;
     overflow-x: hidden;
     min-height: 100vh;
