@@ -8,6 +8,7 @@ const assets = [
   "/logo.jpg",
   "/bg.gif",
   "https://code.jquery.com/jquery-3.6.0.js",
+  "/logo-72.png"
 ]
 
 self.addEventListener("install", installEvent => {

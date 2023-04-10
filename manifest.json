@@ -1,15 +1,14 @@
 {
   "name": "Qoqnus master",
   "short_name": "Qoqnus master",
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/logo.jpg",
+      "src": "/logo-72.png",
       "type": "image/jpeg",
+      "sizes": "72×72"
     },
   ]
 }
