@@ -1,10 +1,5 @@
 const staticDevCoffee = "dev-coffee-site-v1"
 const assets = [
-  "/",
-  "/index.html",
-  "/main.css",
-  "/main-m.css",
-  "/main.js",
   "/logo.jpg",
   "/bg.gif",
   "https://code.jquery.com/jquery-3.6.0.js",

@@ -47,7 +47,9 @@
         text-align: center;
     }
     header {
-        position: absolute;
+        border-radius: 130px;
+        background-color: #2F4F4F;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;

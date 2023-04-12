@@ -41,24 +41,28 @@
         text-align: center;
     }
     header {
-        position: absolute;
+        border-radius: 130px;
+        position: fixed;
+        background-color: #2F4F4F;
         top: 0;
         left: 0;
         width: 100%;
         padding: 30px 100px;
-        display: inline;
+        display: flex;
         justify-content: space-between;
         align-items: left;
         z-index: 1000;
     }
     .logo {
+        display: inline;
+        border-radius: 20px;
         color: white;
         font-weight: 700;
         font-size: 2em;
         text-decoration: none;
     }
     .navigation {
-        display: inline-block;
+        display: inline;
         justify-content: center;
         align-items: center;
         gap: 50px;
