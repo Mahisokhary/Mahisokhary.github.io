@@ -9,6 +9,11 @@ $(function() {
         $(".submenu").slideToggle(500);
     });
 });
+$(function() {
+    $(".btn2").click(function() {
+        $(".submenu2").slideToggle(500);
+    });
+});
 
 const container = document.querySelector(".container");
 const coffees = [{
