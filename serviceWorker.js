@@ -1,7 +1,7 @@
-const staticDevCoffee = "dev-coffee-site-v1"
+const staticDevCoffee = "Qoqnus-master"
 const assets = [
   "/logo.jpg",
-  "/bg.gif",
+  "/bg2.gif",
   "https://code.jquery.com/jquery-3.6.0.js",
   "/logo-72.png"
 ]

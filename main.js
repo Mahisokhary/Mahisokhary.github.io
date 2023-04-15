@@ -21,8 +21,8 @@ const coffees = [{
     image: "logo.jpg"
 },
     {
-        name: "bg",
-        image: "bg.gif"
+        name: "bg2",
+        image: "bg2.gif"
     },
 ];
 const showCoffees = () => {
