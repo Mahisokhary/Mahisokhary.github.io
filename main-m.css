@@ -33,7 +33,7 @@
     main {
         width: 100%;
         position: absolute;
-        top: 1000;
+        top: 300;
         bottom: 1000;
         left: 0;
         align-items: center;
@@ -153,9 +153,5 @@
     }
     td {
         background-color: #720057;
-    }
-    #google {
-        width: 100%;
-        border: none;
     }
 }
