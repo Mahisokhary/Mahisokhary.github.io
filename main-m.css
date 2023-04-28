@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 769px) {
     #a1 {
         font-size: 0.5em;
     }
@@ -153,5 +153,12 @@
     }
     td {
         background-color: #720057;
+    }
+    #search {
+        
+    }
+    #search-btn {
+        position: relative;
+        
     }
 }
