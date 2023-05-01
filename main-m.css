@@ -1,5 +1,17 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 @media only screen and (max-width: 500px) {
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
+    url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+    body {
+        font-family: Vazirmatn;
+    }
     #a1 {
         font-size: 0.5em;
     }
@@ -16,7 +28,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Sans-Serif;
         max-width: 100%;
     }
     audio {
@@ -154,11 +165,9 @@
     td {
         background-color: #720057;
     }
-    #search {
-        
-    }
+    #search {}
     #search-btn {
         position: relative;
-        
+
     }
 }
