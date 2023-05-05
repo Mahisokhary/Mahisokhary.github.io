@@ -8,8 +8,8 @@
     font-display: swap;
 }
 
-    body {
-        font-family: Vazirmatn;
+    .body-fa {
+        font-family: Vazirmatn; 
     }
     #a1 {
         font-size: 1em;
