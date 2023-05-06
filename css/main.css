@@ -7,9 +7,17 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "Ordibehesht";
+    src: url('../assets/Ordibehesht.TTF');
+}
 
     .body-fa {
-        font-family: Vazirmatn; 
+        font-family: "Ordibehesht"; 
+        font-size: 20px;
+    }
+    .body-en {
+        
     }
     #a1 {
         font-size: 1em;

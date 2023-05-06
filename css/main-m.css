@@ -9,20 +9,28 @@
     font-display: swap;
 }
 
-    body {
-        font-family: Vazirmatn;
+@font-face {
+    font-family: Ordibehesht;
+    src: url('../assets/Ordibehesht.TTF');
+}
+    .body-fa {
+        font-family: "Ordibehesht";
+        font-size: 20px;
+    }
+    .body-en {
+        
     }
     #a1 {
-        font-size: 0.5em;
+        font-size: 0.5em;!important
     }
     .title {
-        font-size: 2.5em;
+        font-size: 3.0em;!important
     }
     .title2 {
-        font-size: 1.5em;
+        font-size: 2.0em;!important
     }
     #zq {
-        font-size: 1.5em;
+        font-size: 2.0em;!important
     }
     * {
         margin: 0;
