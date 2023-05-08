@@ -11,13 +11,17 @@
     font-family: "Ordibehesht";
     src: url('../assets/Ordibehesht.TTF');
 }
+@font-face {
+    font-family: mojangles;
+    src: url('../assets/Mojangles.ttf');
+}
 
     .body-fa {
         font-family: "Ordibehesht"; 
         font-size: 20px;
     }
     .body-en {
-        
+        font-family: "mojangles";
     }
     #a1 {
         font-size: 1em;
