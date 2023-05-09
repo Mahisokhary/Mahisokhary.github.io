@@ -3,7 +3,8 @@ const assets = [
   "../assets/logo.jpg",
   "../assets/bg2.gif",
   "https://code.jquery.com/jquery-3.6.0.js",
-  "../assets/logo-72.png"
+  "../assets/logo-72.png",
+  "../assets/Mojangles.ttf",
 ]
 
 self.addEventListener("install", installEvent => {
