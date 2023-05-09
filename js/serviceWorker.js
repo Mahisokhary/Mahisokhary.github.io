@@ -5,6 +5,8 @@ const assets = [
   "https://code.jquery.com/jquery-3.6.0.js",
   "../assets/logo-72.png",
   "../assets/Mojangles.ttf",
+  "https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations",
+  
 ]
 
 self.addEventListener("install", installEvent => {
