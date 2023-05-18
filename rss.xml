@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
-<title>تست</title>
+<title>Qoqnus-master</title>
 <link>http://Qoqnus-master.netlify.app/</link>
-<description>فقط یه تست مزخرفه</description>
+<description>Qoqnus-master</description>
 <item>
 <title>هیچی</title>
 <link>Qoqnus-master.netlify.app</link>
@@ -17,6 +17,15 @@
 <guid>example.com/3</guid>
 <pubDate>Wed, 18 May 2023 17:00:00 GMT</pubDate>
 <description>این خبر فاقد معناست و تسته</description>
+</item>
+<item>
+<title>ققنوس بات</title>
+<link>Qoqnus-master.netlify.app</link>
+<guid>Qoqnus-master.netlify.app</guid>
+<pubDate>Thu, 18 May 2023 15:00:00 +0330</pubDate>
+<description>
+    اسلش کامند vpn ققنوس بات به صورت پایدار قابل استفاده است
+</description>
 </item>
 </channel>
 </rss>
