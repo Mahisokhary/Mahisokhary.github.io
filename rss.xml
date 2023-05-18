@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
-<channel rel="self">
+<channel>
 <title>Qoqnus-master</title>
 <link>https://Qoqnus-master.netlify.app/</link>
 <description>Qoqnus-master</description>
@@ -8,7 +8,7 @@
 <title>حذف قابلیت حذف فحش ققنوس بات</title>
 <link>https://Qoqnus-master.netlify.app</link>
 <guid>https://Qoqnus-master.netlify.app</guid>
-<pubDate>Thu, 18 May 2023 15:00:00 +0330</pubDate>
+<pubDate>Thu, 18 May 2023 16:00:00 +0330</pubDate>
 <description>
     به دلیل اعتراض کاربران به مشکلات قابلیت حذف فحش ققنوس بات این قابلیت حذغ شد
 </description>
