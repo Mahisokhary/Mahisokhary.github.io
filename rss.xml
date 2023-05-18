@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>تست</title>
+<link>http://Qoqnus-master.netlify.app/</link>
+<description>فقط یه تست مزخرفه</description>
+<item>
+<title>هیچی</title>
+<link>Qoqnus-master.netlify.app</link>
+<guid>example.com/3</guid>
+<pubDate>Wed, 18 May 2023 13:00:00 GMT</pubDate>
+<description>این خبر فاقد معناست و تسته</description>
+</item>
+</channel>
+</rss>
