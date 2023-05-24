@@ -18,11 +18,11 @@
 }
   .body-fa {
     font-family: "Vazirmatn";
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
   }
   .body-en {
     font-family: "mojangles";
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
   }
   body {
     text-align: center;
@@ -70,7 +70,7 @@
     color: white;
   }
   section {
-    background-color: whitesmoke;
+    background-color: white;
     width: 90%;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -120,15 +120,15 @@
         width: 100%;
     }
     th {
-        background-color: lightcyan;
+        background-color: whitesmoke;
         color: black;
     }
     td , th {
-        border: 1px solid #000000;
+        border: 1px solid blanchedalmond;
         padding: 5px;
     }
     td {
-        background-color: lightblue;
+        background-color: antiquewhite;
     }
 }
 }
