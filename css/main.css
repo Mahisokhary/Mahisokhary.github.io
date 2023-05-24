@@ -7,159 +7,113 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family: "Ordibehesht";
+    font-family: Ordibehesht;
     src: url('../assets/Ordibehesht.TTF');
 }
 @font-face {
     font-family: mojangles;
     src: url('../assets/Mojangles.ttf');
 }
-
-    .body-fa {
-        font-family: "Vazirmatn"; 
-    }
-    .body-en {
-        font-family: "mojangles";
-    }
-    #a1 {
-        font-size: 1em;
-    }
-    .title {
-        font-size: 5em;
-    }
-    .title2 {
-        font-size: 2.5em;
-    }
-    #zq {
-        font-size: 3em;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        max-width: 100%;
-        height: auto;
-    }
-    audio {
-        height: 100px;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        line-height: 1.45;
-        background-color: black;
-    }
-    body, footer {
-        color: white;
-        overflow-x: hidden;
-        min-height: 100vh;
-    }
-    main {
-        width: 100%;
-        position: absolute;
-        top: 1000;
-        bottom: 1000;
-        left: 0;
-        align-items: center;
-        justify-content: center;
-    }
-    p, h1, h2, h3 {
-        color: white;
-        text-align: center;
-    }
-    header {
-        border-radius: 130px;
-        background-color: #990099;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 30px 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1000;
-    }
-    .logo {
-        border-radius: 100px;
-        color: white;
-        font-weight: 700;
-        font-size: 2em;
-        text-decoration: none;
-    }
-    .navigation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-    .navigation li {
-        list-style: none;
-    }
-    .navigation li a , .effect1 {
-        text-decoration: none;
-        padding: 6px 15px;
-        color: white;
-        border-radius: 20px;
-    }
-    .navigation li a:hover, effect1:hover {
-        background: #112434;
-        color: #fff;
-    }
-    section, #a1 {
-        padding-right: 5px;
-        padding-left: 5px;
-        padding: 10px;
-        //border: 10px solid #008080;
-        border-radius: 100px;
-        //background-color: #2F4F4F;
-        background-image: url('../assets/bg2.gif');
-    }
-    .div1 {
-        margin: 3px 3px 3px 3px;
-        padding-right: 5px;
-        padding-left: 5px;
-        padding: 10px;
-        border: 5px solid #008080;
-        border-radius: 100px;
-        background-color: #008080;
-    }
-    .btn, .btn2 {
-        left: 25%;
+  .body-fa {
+    font-family: "Vazirmatn";
+    background-color: blanchedalmond;
+  }
+  .body-en {
+    font-family: "mojangles";
+    background-color: blanchedalmond;
+  }
+  body {
+    text-align: center;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .title2 {
+    font-size: 1.5em;
+  }
+  header {
+    display: flex;
+    color: black;
+    width: 100%;
+  }
+  .navigation {
+    position: relative;
+    top: 50px;
+    list-style: none;
+    position: absolute;
+    right: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .logo {
+    position: absolute;
+    left: 10%;
+    border-radius: 100px;
+  }
+  .navigation li {
+    display: inline;
+    list-style: none;
+  }
+  .navigation li a, .effect1 {
+    padding: 6px 15px;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .navigation li a:hover, .effect1:hover {
+    background-color: lightgrey;
+    color: white;
+  }
+  section {
+    background-color: whitesmoke;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*padding-right: 5px;
+    padding-left: 5px;
+    padding: 10px;*/
+    position: relative;
+    left: 5%;
+  }
+  .btn, .btn2 {
         display: inline-block;
-        color: white;
-        font-weight: 500;
-        font-size: 1.25rem;
-        background: #990099;
+        color: black;
+        background-color: white;
         border: none;
         border-radius: 5px;
-        padding: 12px 16px;
         cursor: pointer;
+        width: 80%;
+        position: none;
+        text-align: center;
+        padding: 12px 16px;
     }
     .btn:hover, .btn2:hover, .submenu:hover, .submenu2:hover {
-        background: #8b008b;
-    }
+        background-color: lightgrey;
+        }
     .submenu, .submenu2 {
-        left: 50%;
-        transform: translate(-50%, 0);
         text-align: center;
-        position: absolute;
-        background-color: #990099;
-        min-width: 160px;
+        background-color: white;
+        width: 80%;
+        left: 8%;
         border-radius: 5px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         display: none;
+        
     }
     .submenu a, .submenu2 a {
-        color: white;
+        color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
-    .submenu , .btn, .btn2, .submenu2 {
+    .submenu , .btn, .submenu2, .btn2 {
         text-align: center;
-        width: 50%;
         position: relative;
     }
     table {
@@ -167,14 +121,15 @@
         width: 100%;
     }
     th {
-        background-color: #990099;
-        color: #FFFFFF;
+        background-color: lightcyan;
+        color: black;
     }
     td , th {
         border: 1px solid #000000;
         padding: 5px;
     }
     td {
-        background-color: #720057;
+        background-color: lightblue;
     }
+}
 }
