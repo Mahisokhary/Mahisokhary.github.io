@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 @font-face {
     font-family: 'Vazirmatn';
     src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),

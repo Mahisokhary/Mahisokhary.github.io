@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 481px) and (max-width: 899px) {
 @font-face {
     font-family: 'Vazirmatn';
     src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
@@ -34,26 +34,24 @@
     font-size: 1.5em;
   }
   header {
-    display: flex;
     color: black;
     width: 100%;
   }
   .navigation {
-    top: 50px;
+    display: flex;
+    width: 100%;
+    top: 110px;
     list-style: none;
     position: absolute;
-    right: 10%;
     justify-content: center;
     align-items: center;
     gap: 40px;
   }
   .logo {
-    position: absolute;
-    left: 10%;
     border-radius: 100px;
   }
   .navigation li {
-    display: inline;
+    display: inline-flex;
     list-style: none;
   }
   .navigation li a, .effect1 {
