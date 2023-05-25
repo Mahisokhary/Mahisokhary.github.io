@@ -1,11 +1,11 @@
 {
-    "name":"Qoqnus mastee",
+    "name":"Qoqnus master",
     "short_name":"Qoqnus",
-    "theme_color":"#007fc6",
+    "theme_color":"#F5F5F5",
     "icons":[{
         "src":"./assets/logo-72.png","sizes":"72x72","type":"image/png"
     }],
     "start_url":".",
     "display":"standalone",
-    "background_color":"#fff"
+    "background_color":"#F5F5F5"
 }
