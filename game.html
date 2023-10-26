@@ -104,7 +104,7 @@
       var upp = undefined;
       var downn = undefined;
       up.onclick = Function => {
-        if(downn!=undefined && upp!=undefined){return}
+        if(downn!=undefined || upp!=undefined){return}
         
         let gravity_barax = Function => {
           if (RunnerY == height - 100) {
