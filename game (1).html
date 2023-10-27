@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QGD Dino</title>
+</head>
+<body>
+  <h1>QGD Dino v1.0.0-beta2</h1>
+  <canvas id="canvas"></canvas>
+  <p id="score">Score: 0</p>
+  <p id="hscore">High score: 0</p>
+  <p>Enjoy the game!</p>
+  <div id="btns">
+    <button id="up" class="nav">⬆️</button>
+    <button id="down" class="nav">⬇️</button>
+  </div>
+  <style>
+    h1, p {
+      text-align: center;
+    }
+    #canvas {
+      position: relative;
+      width: 100%;
+      border: 1px black solid;
+    }
+    #btns {
+      position: relative;
+      top: 100px;
+      display: flex;
+      width: 100%;
+    }
+    .nav {
+      width: 50%;
+      height: 200px;
+      font-size: 150px;
+    }
+  </style>
+  <script>
+    window.onload = Function => {
+      const cv = document.getElementById("canvas");
+      const up = document.getElementById("up");
+      const down = document.getElementById("down");
+      const score = document.getElementById("score");
+      const hscore = document.getElementById("hscore");
+      
+      const ctx = cv.getContext("2d");
+      const width = canvas.width;
+      const height = canvas.height;
+      
+      var first = Date.now()
+      var RunnerX = 0;
+      var RunnerY = height - 42;
+      var scoree = Number(score.innerHTML.split(" ")[1]);
+      var hscoree = Number(hscore.innerHTML.split(" ")[2]);
+      
+      var sx = 20;
+      var sy = 40;
+      
+      ctx.clearRect(RunnerX, RunnerY, RunnerX + sx, RunnerY + sy);
+      ctx.beginPath();
+      ctx.fillStyle = "#00FF00";
+      ctx.fillRect(RunnerX, RunnerY, sx, sy);
+      
+      counter = Function => {
+        scoree += 1;
+        if(scoree >= hscoree) {
+          hscoree += 1;
+          hscore.innerHTML = "High score: " + hscoree + "(New HighScore!)";
+        }
+        score.innerHTML = "Score: " + scoree;
+      }
+      couting = setInterval(counter, 40);
+      
+      gameover = Function => {
+        first = Date.now();
+        scoree = 0;
+        score.innerHTML = "Score: " + 0;
+        alert("You lose!");
+        hscore.innerHTML = "High Score: " + hscoree;
+      }
+      
+      var mh = [width, height - 22, 10, 20];
+      var mh2 = [width - 400, height -35, 20, 10];
+      manee = Function => {
+        ctx.beginPath();
+        ctx.fillStyle = "#FF0000";
+        ctx.clearRect(mh[0], mh[1], mh[2], mh[3]);
+        mh[0] -= 10;
+        ctx.fillRect(mh[0], mh[1], mh[2], mh[3]);
+        if(mh[0] < 0) {
+          ctx.clearRect(mh[0], mh[1], mh[2], mh[3]);
+          mh[0] = width;
+          ctx.fillRect(mh[0], mh[1], mh[2], mh[3]);
+        }
+        if((mh[0]==RunnerX+sx || mh[0]==RunnerX) && RunnerY>=height-52) {
+          ctx.clearRect(mh[0], mh[1], mh[2], mh[3]);
+          mh[0] = width;
+          ctx.fillRect(mh[0], mh[1], mh[2], mh[3]);
+          gameover();
+        }
+        clearInterval(mane);
+        speed = (Date.now() - first) / 1000;
+        if(scoree >= 4000) {
+          speed = 20;
+        } else {
+          let y = Number(scoree / 500);
+          let z = 100;
+          for(i=0; i<=y; i++) {
+            z -= 10;
+          }
+          speed = z;
+        }
+        mane = setInterval(manee, speed);
+      }
+      mane = setInterval(manee, 100);
+      
+      var upp = undefined;
+      var downn = undefined;
+      up.onclick = Function => {
+        if(downn!=undefined || upp!=undefined){return}
+        
+        let gravity_barax = Function => {
+          if (RunnerY == height - 100) {
+            clearInterval(upp);
+            upp = undefined;
+          }
+          ctx.clearRect(RunnerX, RunnerY, RunnerX + sx, RunnerY + sy);
+          ctx.beginPath();
+          ctx.fillStyle = "#00FF00";
+          RunnerY -= 2;
+          ctx.fillRect(RunnerX, RunnerY, sx, sy);
+        }
+        upp = setInterval(gravity_barax, 20);
+        
+        let gravity = Function => {
+          if(upp!=undefined){return}
+          if (RunnerY == height - 42) {
+            clearInterval(downn);
+            downn = undefined;
+          }
+          ctx.clearRect(RunnerX, RunnerY, RunnerX + sx, RunnerY + sy);
+          ctx.beginPath();
+          ctx.fillStyle = "#00FF00";
+          RunnerY += 2;
+          ctx.fillRect(RunnerX, RunnerY, sx, sy);
+        }
+        downn = setInterval(gravity, 20);
+      }
+      
+      down.onclick = Function => {
+          clearInterval(upp);
+          clearInterval(downn);
+          upp = undefined;
+          downn = undefined;
+          RunnerY = height - 42;
+          ctx.clearRect(RunnerX, 0, RunnerX + sx, RunnerY + sy);
+          ctx.beginPath();
+          ctx.fillStyle = "#00FF00";
+          ctx.fillRect(RunnerX, RunnerY, sx, sy);
+      }
+    }
+  </script>
+</body>
+</html>
