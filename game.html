@@ -7,7 +7,7 @@
   <title>QGD Dino</title>
 </head>
 <body>
-  <h1>QGD Dino v1.0.0-beta1</h1>
+  <h1>QGD Dino v1.0.0-beta2</h1>
   <canvas id="canvas"></canvas>
   <p id="score">Score: 0</p>
   <p id="hscore">High score: 0</p>
@@ -49,6 +49,7 @@
       const width = canvas.width;
       const height = canvas.height;
       
+      var first = Date.now()
       var RunnerX = 0;
       var RunnerY = height - 42;
       var scoree = Number(score.innerHTML.split(" ")[1]);
@@ -70,9 +71,10 @@
         }
         score.innerHTML = "Score: " + scoree;
       }
-      couting = setInterval(counter, 1);
+      couting = setInterval(counter, 40);
       
       gameover = Function => {
+        first = Date.now();
         scoree = 0;
         score.innerHTML = "Score: " + 0;
         alert("You lose!");
@@ -85,7 +87,7 @@
         ctx.beginPath();
         ctx.fillStyle = "#FF0000";
         ctx.clearRect(mh[0], mh[1], mh[2], mh[3]);
-        mh[0] -= 1;
+        mh[0] -= 10;
         ctx.fillRect(mh[0], mh[1], mh[2], mh[3]);
         if(mh[0] < 0) {
           ctx.clearRect(mh[0], mh[1], mh[2], mh[3]);
@@ -98,8 +100,21 @@
           ctx.fillRect(mh[0], mh[1], mh[2], mh[3]);
           gameover();
         }
+        clearInterval(mane);
+        speed = (Date.now() - first) / 1000;
+        if(scoree >= 4000) {
+          speed = 20;
+        } else {
+          let y = Number(scoree / 500);
+          let z = 100;
+          for(i=0; i<=y; i++) {
+            z -= 10;
+          }
+          speed = z;
+        }
+        mane = setInterval(manee, speed);
       }
-      mane = setInterval(manee, 10);
+      mane = setInterval(manee, 100);
       
       var upp = undefined;
       var downn = undefined;
@@ -134,27 +149,16 @@
         downn = setInterval(gravity, 20);
       }
       
-      kham = undefined;
       down.onclick = Function => {
-        if(kham){return}
-        ctx.clearRect(RunnerX, RunnerY, RunnerX + sx, RunnerY + sy);
-        ctx.beginPath();
-        ctx.fillStyle = "#00FF00";
-        ctx.fillRect(RunnerX, RunnerY + 20, sx, sy - 20);
-        let f = true
-        let gravity = Function => {
-          if(f){
-            f = false;
-            return;
-          }
-          ctx.clearRect(RunnerX, RunnerY, RunnerX + sx, RunnerY + sy);
+          clearInterval(upp);
+          clearInterval(downn);
+          upp = undefined;
+          downn = undefined;
+          RunnerY = height - 42;
+          ctx.clearRect(RunnerX, 0, RunnerX + sx, RunnerY + sy);
           ctx.beginPath();
           ctx.fillStyle = "#00FF00";
           ctx.fillRect(RunnerX, RunnerY, sx, sy);
-          clearInterval(kham);
-          kham = undefined;
-        }
-        kham = setInterval(gravity, 200);
       }
     }
   </script>
