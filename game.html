@@ -53,7 +53,13 @@
       var RunnerX = 0;
       var RunnerY = height - 42;
       var scoree = Number(score.innerHTML.split(" ")[1]);
-      var hscoree = Number(hscore.innerHTML.split(" ")[2]);
+
+      var hscoree = localStorage.getItem("hscore");
+      if (hscoree == null) {
+        hscoree = 0;
+      } else {
+        hscore.innerHTML = "High score: " + hscoree;
+      }
       
       var sx = 20;
       var sy = 40;
@@ -79,6 +85,7 @@
         score.innerHTML = "Score: " + 0;
         alert("You lose!");
         hscore.innerHTML = "High Score: " + hscoree;
+        localStorage.setItem("hscore", hscoree);
       }
       
       var mh = [width, height - 22, 10, 20];
