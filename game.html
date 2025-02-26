@@ -54,7 +54,7 @@
       var RunnerY = height - 42;
       var scoree = Number(score.innerHTML.split(" ")[1]);
 
-      var hscoree = localStorage.getItem("hscore");
+      var hscoree = Number(localStorage.getItem("hscore"));
       if (hscoree == null) {
         hscoree = 0;
       } else {
